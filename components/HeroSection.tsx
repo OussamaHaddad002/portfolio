@@ -64,9 +64,9 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Passionate about creating innovative web solutions with modern technologies. 
-            Experienced in building scalable applications with React, Node.js, and cutting-edge frameworks.
-            Let's bring your ideas to life through code.
+            Software Engineering student passionate about creating innovative web solutions with AI integration. 
+            Experienced in building scalable chatbot systems, geospatial dashboards, and modern web applications 
+            using React, FastAPI, and machine learning technologies.
           </motion.p>
 
           <motion.div
@@ -103,7 +103,7 @@ const HeroSection = () => {
             className="flex gap-6 justify-center"
           >
             <motion.a
-              href="https://github.com"
+              href="https://github.com/oussamaelhaddad"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white/20 backdrop-blur-lg rounded-full hover:bg-white/30 transition-colors"
@@ -114,7 +114,7 @@ const HeroSection = () => {
             </motion.a>
             
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/elhaddad-oussama/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white/20 backdrop-blur-lg rounded-full hover:bg-white/30 transition-colors"
@@ -125,7 +125,7 @@ const HeroSection = () => {
             </motion.a>
             
             <motion.a
-              href="mailto:oussama@example.com"
+              href="mailto:oussamaelhaddad02@gmail.com"
               className="p-3 bg-white/20 backdrop-blur-lg rounded-full hover:bg-white/30 transition-colors"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

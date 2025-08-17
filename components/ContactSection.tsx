@@ -43,21 +43,21 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'oussama.elhaddad@example.com',
-      href: 'mailto:oussama.elhaddad@example.com',
+      value: 'oussamaelhaddad02@gmail.com',
+      href: 'mailto:oussamaelhaddad02@gmail.com',
       color: 'text-blue-600'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+216 92 064 881',
+      href: 'tel:+21692064881',
       color: 'text-green-600'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Available for Remote Work',
+      value: 'Tunis, Tunisia',
       href: null,
       color: 'text-purple-600'
     }
@@ -73,7 +73,7 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/oussamaelhaddad',
+      href: 'https://www.linkedin.com/in/elhaddad-oussama/',
       color: 'text-blue-600 hover:text-blue-700'
     },
     {
@@ -120,8 +120,9 @@ const ContactSection = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
               <p className="text-gray-300 mb-8 leading-relaxed">
-                I'm always excited to work on new projects and collaborate with talented teams. 
-                Whether you have a specific project in mind or just want to explore possibilities, 
+                I'm a passionate Software Engineering student and Full-Stack Developer with experience in AI integration, 
+                geospatial applications, and modern web technologies. I'm always excited to work on innovative projects 
+                and collaborate with talented teams. Whether you have a project idea or want to discuss opportunities, 
                 I'd love to hear from you.
               </p>
 
@@ -328,9 +329,7 @@ const ContactSection = () => {
           className="text-center mt-16 pt-8 border-t border-white/20"
         >
           <p className="text-gray-400">
-            © 2024 Oussama Elhaddad. Built with React, Next.js & Three.js. 
-            <span className="block sm:inline"> Designed with ❤️ for great user experiences.</span>
-          </p>
+            © 2024 Oussama Elhaddad. </p>
         </motion.div>
       </div>
     </section>

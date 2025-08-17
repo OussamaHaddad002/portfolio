@@ -7,108 +7,104 @@ const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Senior Full-Stack Developer',
-      company: 'Tech Innovations Inc.',
-      location: 'Remote',
-      period: '2022 - Present',
+      title: 'Full-Stack Development Engineer',
+      company: 'Oratio Technologies',
+      location: 'Tunis, Tunisia',
+      period: 'October 2024 - Present',
       type: 'Full-time',
-      description: 'Leading development of enterprise-level web applications and mentoring junior developers.',
+      description: 'Leading development of AI-powered chatbot solutions with comprehensive backend and frontend implementation.',
       achievements: [
-        'Architected and delivered 5+ scalable web applications serving 100K+ users',
-        'Improved application performance by 60% through optimization techniques',
-        'Mentored team of 6 junior developers, improving code quality by 40%',
-        'Implemented CI/CD pipelines reducing deployment time by 80%'
+        'Designed and implemented scalable backend architecture for AI-based chatbot platform',
+        'Developed interactive and responsive user interface with modern design principles',
+        'Integrated AI models for enhanced chatbot capabilities and user experience',
+        'Implemented data visualization features for faster decision-making processes'
       ],
-      technologies: ['React', 'Node.js', 'AWS', 'MongoDB', 'TypeScript', 'Docker'],
-      companyWebsite: 'https://techinnovations.com'
+      technologies: ['React', 'FastAPI', 'MongoDB', 'TypeScript', 'AI Integration', 'Tailwind CSS', 'Git', 'Jira'],
+      companyWebsite: '#'
     },
     {
       id: 2,
-      title: 'Full-Stack Developer',
-      company: 'Digital Solutions Agency',
-      location: 'New York, NY',
-      period: '2020 - 2022',
+      title: 'Frontend Development Engineer',
+      company: 'OORB: Open Organic Robotics',
+      location: 'Tunis, Tunisia',
+      period: 'February 2025 - May 2025',
       type: 'Full-time',
-      description: 'Developed custom web solutions for diverse clients across various industries.',
+      description: 'Specialized in frontend development for robotics applications with focus on interactive user interfaces.',
       achievements: [
-        'Successfully delivered 20+ client projects with 98% satisfaction rate',
-        'Reduced client onboarding time by 50% through automated processes',
-        'Collaborated with design team to implement pixel-perfect user interfaces',
-        'Integrated third-party APIs and payment systems for e-commerce platforms'
+        'Designed and implemented interactive UI for robotics control systems',
+        'Collaborated with cross-functional teams using Agile/Scrum methodologies',
+        'Delivered high-quality code following best practices and modern development standards',
+        'Contributed to project documentation and knowledge sharing initiatives'
       ],
-      technologies: ['Vue.js', 'Express.js', 'PostgreSQL', 'Redis', 'Stripe', 'Sass'],
-      companyWebsite: 'https://digitalsolutions.com'
+      technologies: ['React', 'TypeScript', 'Mantine', 'Git', 'Notion'],
+      companyWebsite: '#'
     },
     {
       id: 3,
-      title: 'Frontend Developer',
-      company: 'StartupHub',
-      location: 'San Francisco, CA',
-      period: '2019 - 2020',
-      type: 'Full-time',
-      description: 'Built responsive web applications and contributed to the company\'s main product development.',
+      title: 'Full-Stack Development Intern',
+      company: 'Oratio',
+      location: 'Tunis, Tunisia',
+      period: 'June 2024 - August 2024',
+      type: 'Internship',
+      description: 'Comprehensive internship focusing on full-stack chatbot development with modern web technologies.',
       achievements: [
-        'Developed responsive components used across 10+ product features',
-        'Improved website loading speed by 45% through performance optimization',
-        'Collaborated with UX team to enhance user experience and accessibility',
-        'Contributed to open-source projects, gaining 500+ GitHub stars'
+        'Built scalable backend infrastructure using Node.js for chatbot applications',
+        'Created modern and responsive frontend interfaces using React',
+        'Implemented real-time communication features and API integrations',
+        'Participated in Agile development process and code review sessions'
       ],
-      technologies: ['React', 'JavaScript', 'CSS3', 'Webpack', 'Jest', 'Git'],
-      companyWebsite: 'https://startuphub.com'
-    },
-    {
-      id: 4,
-      title: 'Junior Web Developer',
-      company: 'WebCraft Agency',
-      location: 'Boston, MA',
-      period: '2018 - 2019',
-      type: 'Full-time',
-      description: 'Started my professional journey focusing on frontend development and learning best practices.',
-      achievements: [
-        'Built 15+ responsive websites for small to medium businesses',
-        'Learned modern development workflows and version control systems',
-        'Contributed to team knowledge sharing sessions and code reviews',
-        'Achieved 100% project delivery rate within deadlines'
-      ],
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Bootstrap', 'PHP'],
-      companyWebsite: 'https://webcraftagency.com'
+      technologies: ['React', 'Node.js', 'MongoDB', 'TypeScript', 'Git', 'Jira'],
+      companyWebsite: '#'
     }
   ]
 
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University of Technology',
-      period: '2014 - 2018',
-      location: 'Boston, MA',
-      gpa: '3.8/4.0',
+      degree: 'National Engineering Diploma in Software Development',
+      institution: 'Higher Institute for Computer Science',
+      period: '2023 - Present',
+      location: 'Ariana, Tunisia',
+      gpa: 'In Progress',
       achievements: [
-        'Graduated Magna Cum Laude',
-        'Dean\'s List for 6 consecutive semesters',
-        'President of Computer Science Society',
-        'Published research paper on web performance optimization'
+        'Specializing in Software Development and Engineering',
+        'Focus on modern web technologies and AI integration',
+        'Participating in research projects and practical applications',
+        'Maintaining excellent academic performance'
+      ]
+    },
+    {
+      degree: 'Bachelor\'s in Computer Science',
+      institution: 'H S Sciences and Technology Hammam Sousse',
+      period: '2020 - 2023',
+      location: 'Sousse, Tunisia',
+      gpa: 'Software Engineering & Information Systems',
+      achievements: [
+        'Specialized in Software Engineering & Information Systems',
+        'Completed comprehensive coursework in programming and databases',
+        'Developed strong foundation in computer science principles',
+        'Participated in multiple academic and practical projects'
       ]
     }
   ]
 
   const certifications = [
     {
-      name: 'AWS Certified Developer Associate',
-      issuer: 'Amazon Web Services',
-      date: '2023',
-      credentialId: 'AWS-DEV-2023-001'
+      name: 'Azure AI Fundamentals (AI-900)',
+      issuer: 'Microsoft',
+      date: 'November 2024',
+      credentialId: 'AI-900-2024'
     },
     {
-      name: 'Google Cloud Professional Developer',
-      issuer: 'Google Cloud',
-      date: '2022',
-      credentialId: 'GCP-DEV-2022-001'
+      name: 'Microsoft Excel Associate',
+      issuer: 'Microsoft',
+      date: 'April 2024',
+      credentialId: 'EXCEL-ASSOC-2024'
     },
     {
-      name: 'Meta React Developer Certificate',
-      issuer: 'Meta',
-      date: '2021',
-      credentialId: 'META-REACT-2021-001'
+      name: 'Google Data Analytics Certificate',
+      issuer: 'Google',
+      date: 'May 2022',
+      credentialId: 'GDA-2022-001'
     }
   ]
 

@@ -24,10 +24,10 @@ const SkillsSection = () => {
       skills: [
         { name: 'React', level: 95 },
         { name: 'TypeScript', level: 90 },
-        { name: 'Next.js', level: 88 },
         { name: 'Vue.js', level: 85 },
+        { name: 'Angular', level: 80 },
         { name: 'Tailwind CSS', level: 92 },
-        { name: 'Three.js', level: 80 }
+        { name: 'HTML5/CSS3', level: 95 }
       ]
     },
     {
@@ -36,68 +36,68 @@ const SkillsSection = () => {
       color: 'text-green-500',
       bgColor: 'bg-green-50',
       skills: [
-        { name: 'Node.js', level: 93 },
-        { name: 'Express.js', level: 90 },
+        { name: 'Node.js', level: 90 },
+        { name: 'Express.js', level: 88 },
+        { name: 'NestJS', level: 85 },
+        { name: 'FastAPI', level: 87 },
         { name: 'Python', level: 85 },
-        { name: 'GraphQL', level: 82 },
-        { name: 'REST APIs', level: 95 },
-        { name: 'Microservices', level: 78 }
+        { name: 'REST APIs', level: 92 }
       ]
     },
     {
-      title: 'Database & Storage',
+      title: 'Database & GIS',
       icon: Database,
       color: 'text-purple-500',
       bgColor: 'bg-purple-50',
       skills: [
-        { name: 'MongoDB', level: 90 },
         { name: 'PostgreSQL', level: 88 },
-        { name: 'Redis', level: 85 },
-        { name: 'Firebase', level: 82 },
+        { name: 'PostGIS', level: 85 },
+        { name: 'MongoDB', level: 90 },
+        { name: 'MySQL', level: 82 },
         { name: 'Prisma', level: 80 },
-        { name: 'SQL', level: 87 }
+        { name: 'GraphQL', level: 78 }
       ]
     },
     {
-      title: 'DevOps & Cloud',
+      title: 'DevOps & Infrastructure',
       icon: Cloud,
       color: 'text-orange-500',
       bgColor: 'bg-orange-50',
       skills: [
-        { name: 'AWS', level: 85 },
-        { name: 'Docker', level: 88 },
-        { name: 'Kubernetes', level: 75 },
-        { name: 'CI/CD', level: 82 },
-        { name: 'Nginx', level: 80 },
-        { name: 'Linux', level: 85 }
+        { name: 'Docker', level: 85 },
+        { name: 'AWS EC2', level: 80 },
+        { name: 'Redis', level: 82 },
+        { name: 'Git/GitLab', level: 90 },
+        { name: 'WebSockets', level: 85 },
+        { name: 'Keycloak', level: 75 }
       ]
     },
     {
-      title: 'Mobile Development',
-      icon: Smartphone,
+      title: 'AI & Analytics',
+      icon: Brain,
       color: 'text-pink-500',
       bgColor: 'bg-pink-50',
       skills: [
-        { name: 'React Native', level: 85 },
-        { name: 'Flutter', level: 78 },
-        { name: 'Expo', level: 82 },
-        { name: 'iOS Development', level: 75 },
-        { name: 'Android Development', level: 75 },
-        { name: 'PWA', level: 88 }
+        { name: 'Machine Learning', level: 80 },
+        { name: 'Python (pandas)', level: 85 },
+        { name: 'scikit-learn', level: 78 },
+        { name: 'Chart.js', level: 88 },
+        { name: 'Kibana', level: 75 },
+        { name: 'Anomaly Detection', level: 82 }
       ]
     },
     {
-      title: 'Tools & Workflow',
+      title: 'Programming Languages',
       icon: GitBranch,
       color: 'text-indigo-500',
       bgColor: 'bg-indigo-50',
       skills: [
-        { name: 'Git', level: 95 },
-        { name: 'VS Code', level: 98 },
-        { name: 'Figma', level: 85 },
-        { name: 'Jest', level: 82 },
-        { name: 'Webpack', level: 80 },
-        { name: 'Vite', level: 88 }
+        { name: 'JavaScript', level: 92 },
+        { name: 'Python', level: 85 },
+        { name: 'Java', level: 80 },
+        { name: 'C/C++', level: 78 },
+        { name: 'PHP', level: 75 },
+        { name: 'TypeScript', level: 90 }
       ]
     }
   ]

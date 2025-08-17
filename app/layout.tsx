@@ -4,15 +4,21 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Oussama Elhaddad - Full-Stack Developer',
-  description: 'Professional portfolio showcasing full-stack development expertise in React, Node.js, and modern web technologies.',
-  keywords: 'full-stack developer, React, Node.js, TypeScript, web development, software engineer',
+  title: 'Oussama Elhaddad - Full-Stack Developer & Software Engineer',
+  description: 'Software Engineering student and Full-Stack Developer with expertise in AI integration, geospatial applications, React, FastAPI, and modern web technologies. Available for opportunities in Tunis, Tunisia.',
+  keywords: 'Oussama Elhaddad, full-stack developer, software engineer, React, FastAPI, MongoDB, TypeScript, AI integration, geospatial, chatbot development, Tunisia',
   authors: [{ name: 'Oussama Elhaddad' }],
   creator: 'Oussama Elhaddad',
   openGraph: {
-    title: 'Oussama Elhaddad - Full-Stack Developer',
-    description: 'Professional portfolio showcasing full-stack development expertise',
+    title: 'Oussama Elhaddad - Full-Stack Developer & Software Engineer',
+    description: 'Software Engineering student with expertise in AI integration and modern web technologies',
     type: 'website',
+    locale: 'en_US',
+    siteName: 'Oussama Elhaddad Portfolio',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 

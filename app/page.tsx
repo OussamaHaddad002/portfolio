@@ -7,6 +7,7 @@ import Navigation from '@/components/Navigation'
 import ProjectsSection from '@/components/ProjectsSection'
 import SkillsSection from '@/components/SkillsSection'
 import ExperienceSection from '@/components/ExperienceSection'
+import AchievementsSection from '@/components/AchievementsSection'
 import ContactSection from '@/components/ContactSection'
 import ThreeBackground from '@/components/ThreeBackground'
 
@@ -15,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'projects', 'skills', 'experience', 'contact']
+      const sections = ['hero', 'projects', 'skills', 'experience', 'achievements', 'contact']
       const scrollPosition = window.scrollY + 100
 
       sections.forEach((section) => {
@@ -51,6 +52,7 @@ export default function Home() {
         <ProjectsSection />
         <SkillsSection />
         <ExperienceSection />
+        <AchievementsSection />
         <ContactSection />
       </motion.div>
     </main>
