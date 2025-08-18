@@ -67,7 +67,7 @@ const ContactSection = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/oussamaelhaddad',
+      href: 'https://github.com/OussamaHaddad002',
       color: 'text-gray-700 hover:text-gray-900'
     },
     {
@@ -81,12 +81,6 @@ const ContactSection = () => {
       label: 'Twitter',
       href: 'https://twitter.com/oussamaelhaddad',
       color: 'text-blue-400 hover:text-blue-500'
-    },
-    {
-      icon: MessageCircle,
-      label: 'Discord',
-      href: 'https://discord.com/users/oussamaelhaddad',
-      color: 'text-indigo-600 hover:text-indigo-700'
     }
   ]
 
