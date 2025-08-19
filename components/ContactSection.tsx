@@ -75,13 +75,8 @@ const ContactSection = () => {
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/elhaddad-oussama/',
       color: 'text-blue-600 hover:text-blue-700'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/oussamaelhaddad',
-      color: 'text-blue-400 hover:text-blue-500'
     }
+    
   ]
 
   return (
