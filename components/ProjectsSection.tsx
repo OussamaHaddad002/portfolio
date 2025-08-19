@@ -2,22 +2,23 @@
 
 import { motion } from 'framer-motion'
 import { ExternalLink, Github, Code, Database, Globe } from 'lucide-react'
-import Image from 'next/image'
+import VideoPlayer from './VideoPlayer'
 
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'Smart Pipeline Risk Assessment Dashboard',
+      title: 'Pipeline Integrity Management System',
       subtitle: 'Interactive Geospatial Dashboard',
       description: 'Interactive geospatial dashboard for pipeline integrity monitoring with AI-powered risk prediction capabilities.',
       problem: 'Pipeline operators needed real-time monitoring and predictive risk assessment for infrastructure integrity.',
       solution: 'Built interactive geospatial dashboard using React, Leaflet, and MapBox with AI risk predictor integration.',
       impact: 'Enabled proactive maintenance scheduling and reduced pipeline failure risks through predictive analytics.',
       technologies: ['React', 'Node.js', 'Leaflet', 'MapBox', 'PostGIS', 'Docker', 'WebSocket'],
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
+      videoSrc: '/Pipeline Integrity Management System.mp4',
+      posterSrc: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
       demoUrl: '#',
-      githubUrl: 'https://github.com/oussamaelhaddad',
+      githubUrl: 'https://github.com/OussamaHaddad002/Pipeline-Integrity-Management-System',
       category: 'Full-Stack'
     },
     {
@@ -29,9 +30,10 @@ const ProjectsSection = () => {
       solution: 'Developed comprehensive system using NestJS, PostgreSQL, and Vue.js with Chart.js for visualization.',
       impact: 'Streamlined data analysis workflow and improved maintenance prediction accuracy by integrating multiple sources.',
       technologies: ['NestJS', 'PostgreSQL', 'Redis', 'Vue.js', 'Chart.js', 'TypeScript'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+      videoSrc: '/Data Fusion System.mp4',
+      posterSrc: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
       demoUrl: '#',
-      githubUrl: 'https://github.com/oussamaelhaddad',
+      githubUrl: 'https://github.com/OussamaHaddad002/Automated-Data-Fusion-System',
       category: 'Backend'
     },
     {
@@ -43,9 +45,10 @@ const ProjectsSection = () => {
       solution: 'Built scalable platform using React, FastAPI, and MongoDB with AI model integration and modern UI.',
       impact: 'Delivered production-ready chatbot solution improving customer engagement and operational efficiency.',
       technologies: ['React', 'FastAPI', 'MongoDB', 'TypeScript', 'AI Integration', 'Tailwind CSS'],
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-      demoUrl: '#',
-      githubUrl: 'https://github.com/oussamaelhaddad',
+      videoSrc: '/Oratio.mp4',
+      posterSrc: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
+      demoUrl: 'https://chat.oratiotechnologies.com/',
+      githubUrl: '#',
       category: 'Full-Stack'
     }
   ]
@@ -105,47 +108,43 @@ const ProjectsSection = () => {
                 index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
               } gap-8 lg:gap-12 items-center`}
             >
-              {/* Project Image */}
+              {/* Project Video */}
               <div className="lg:w-1/2">
-                <motion.div
-                  className="relative group overflow-hidden rounded-2xl shadow-2xl"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={600}
-                    height={400}
-                    className="w-full h-64 lg:h-80 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-4 left-4 right-4 flex gap-3">
-                      <motion.a
-                        href={project.demoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-lg rounded-lg text-white hover:bg-white/30 transition-colors"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <ExternalLink size={16} />
-                        Live Demo
-                      </motion.a>
-                      <motion.a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-lg rounded-lg text-white hover:bg-white/30 transition-colors"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <Github size={16} />
-                        Code
-                      </motion.a>
-                    </div>
-                  </div>
-                </motion.div>
+                <VideoPlayer
+                  videoSrc={project.videoSrc}
+                  posterSrc={project.posterSrc}
+                  title={project.title}
+                />
+                
+                {/* Action Buttons Overlay */}
+                <div className="mt-4 flex gap-3">
+                  {project.demoUrl !== '#' && (
+                    <motion.a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <ExternalLink size={16} />
+                      Live Demo
+                    </motion.a>
+                  )}
+                  {project.githubUrl !== '#' && (
+                    <motion.a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Github size={16} />
+                      Code
+                    </motion.a>
+                  )}
+                </div>
               </div>
 
               {/* Project Details */}
@@ -205,31 +204,6 @@ const ProjectsSection = () => {
                       </span>
                     ))}
                   </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <motion.a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <ExternalLink size={18} />
-                    View Live
-                  </motion.a>
-                  <motion.a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-medium hover:border-gray-400 hover:bg-gray-50 transition-colors"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Github size={18} />
-                    Source Code
-                  </motion.a>
                 </div>
               </div>
             </motion.div>

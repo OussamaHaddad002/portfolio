@@ -103,7 +103,7 @@ const HeroSection = () => {
             className="flex gap-6 justify-center"
           >
             <motion.a
-              href="https://github.com/oussamaelhaddad"
+              href="https://github.com/OussamaHaddad002"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white/20 backdrop-blur-lg rounded-full hover:bg-white/30 transition-colors"

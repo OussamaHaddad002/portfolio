@@ -24,8 +24,8 @@ const SkillsSection = () => {
       skills: [
         { name: 'React', level: 95 },
         { name: 'TypeScript', level: 90 },
-        { name: 'Vue.js', level: 85 },
-        { name: 'Angular', level: 80 },
+        { name: 'Vue.js', level: 65 },
+        { name: 'Angular', level: 70 },
         { name: 'Tailwind CSS', level: 92 },
         { name: 'HTML5/CSS3', level: 95 }
       ]
@@ -38,9 +38,9 @@ const SkillsSection = () => {
       skills: [
         { name: 'Node.js', level: 90 },
         { name: 'Express.js', level: 88 },
-        { name: 'NestJS', level: 85 },
+        { name: 'NestJS', level: 75 },
         { name: 'FastAPI', level: 87 },
-        { name: 'Python', level: 85 },
+        { name: 'Python', level: 75 },
         { name: 'REST APIs', level: 92 }
       ]
     },
@@ -51,7 +51,7 @@ const SkillsSection = () => {
       bgColor: 'bg-purple-50',
       skills: [
         { name: 'PostgreSQL', level: 88 },
-        { name: 'PostGIS', level: 85 },
+        { name: 'PostGIS', level: 75 },
         { name: 'MongoDB', level: 90 },
         { name: 'MySQL', level: 82 },
         { name: 'Prisma', level: 80 },
@@ -65,7 +65,7 @@ const SkillsSection = () => {
       bgColor: 'bg-orange-50',
       skills: [
         { name: 'Docker', level: 85 },
-        { name: 'AWS EC2', level: 80 },
+        { name: 'Azure', level: 70 },
         { name: 'Redis', level: 82 },
         { name: 'Git/GitLab', level: 90 },
         { name: 'WebSockets', level: 85 },
@@ -79,11 +79,11 @@ const SkillsSection = () => {
       bgColor: 'bg-pink-50',
       skills: [
         { name: 'Machine Learning', level: 80 },
-        { name: 'Python (pandas)', level: 85 },
+        { name: 'Python (pandas)', level: 75 },
         { name: 'scikit-learn', level: 78 },
         { name: 'Chart.js', level: 88 },
         { name: 'Kibana', level: 75 },
-        { name: 'Anomaly Detection', level: 82 }
+        { name: 'Elastic Search', level: 72 }
       ]
     },
     {
@@ -93,10 +93,10 @@ const SkillsSection = () => {
       bgColor: 'bg-indigo-50',
       skills: [
         { name: 'JavaScript', level: 92 },
-        { name: 'Python', level: 85 },
-        { name: 'Java', level: 80 },
+        { name: 'Python', level: 75 },
+        { name: 'Java', level: 65 },
         { name: 'C/C++', level: 78 },
-        { name: 'PHP', level: 75 },
+        { name: 'PHP', level: 55 },
         { name: 'TypeScript', level: 90 }
       ]
     }
